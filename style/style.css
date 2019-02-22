@@ -77,3 +77,14 @@ body{
     visibility: hidden;
     background: rgba(237, 243, 238, 0.506);
   }
+
+  #finish{
+    top   : 120px;
+    left  : 500px;
+    background: white;
+    position: absolute;
+    box-shadow: 0 0 20px black;
+    border-radius: 100%;
+    width : 52px;
+    height: 52px;
+  }
