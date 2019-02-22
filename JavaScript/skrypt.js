@@ -1,14 +1,8 @@
-let ball   = document.querySelector('#ball')
+let ball = document.querySelector('#ball')
 let field = document.querySelector('#field')
-let output = document.querySelector('#hole')
+let holes = document.querySelectorAll('.hole');
+let start = document.querySelector('#start')
+let message = document.querySelector('.message');
 
-
-
-
-function deviceGyroscope(e) {
-  let x = e.beta
-  let y = e.gamma
-    console.log(e.beta + " " + e.gamma)
-}
-
-window.addEventListener('deviceorientation', deviceGyroscope);
+let maxY = field.clientHeight - ball.clientHeight
+let maxX = field.clientWidth - ball.clientHeight
